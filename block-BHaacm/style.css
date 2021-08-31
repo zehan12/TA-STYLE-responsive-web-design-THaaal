@@ -1,0 +1,258 @@
+:root {
+     --primary:rgb(34,41,70);
+     --secoundary:rgb(233,236,252);
+     --tertiary:rgb(86,183,103);
+}
+
+/* Reset CSS Start  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	/* list-style: none; */
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+ 
+/* Reset CSS over */
+
+/* general */
+
+body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header */
+
+.header{
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 100px;
+    align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+
+/* main */
+
+h1{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.container{   
+    width:100%;
+    padding: 50px 120px ;
+    background-color: var(--secoundary);
+}
+
+.pencil{
+    width:100%;
+
+}
+
+.para{
+    margin-right: 30px;
+    color: rgb(162, 164, 170);
+    width: 90%;
+    font-weight: 300;
+}
+
+.col{
+    flex:0 1 50%;
+}
+
+.btn{
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color:var(--tertiary);
+    font-weight: 400;
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+.header .green{
+    color: var(--tertiary);
+}
+
+/* our blog */
+
+h2{
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.block-wrap{
+   justify-content: space-evenly;
+   margin: 0 100px;
+
+}
+
+.image-blog{
+    width: 90%;
+}
+
+h3{
+    font-size: 28px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.para-2{
+    width: 90%;
+    text-align: justify;
+    color: rgb(75, 77, 82);
+}
+
+.btn-blog{
+    padding: 5px 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color:var(--tertiary);
+    font-weight: 400;
+    margin: 20px 0;
+    border-radius: 2px;
+    margin-bottom: 60px;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--primary);
+    height: 70px;
+    align-items: center;
+    padding: 0 50px;
+    color: rgb(188,192,210);
+    font-size: 28px;
+}
+ 
+.icon{
+    font-size: 38px;
+    margin-right: 30px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:768px){
+    
+    .header{
+        flex-direction: column;
+    }
+    
+    .logo{
+          width: 150px;
+          margin: 20px;
+    }
+
+    .nav-bar{
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .para{
+        width: 100%;
+    }
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+
+    
+    /* our blog */
+
+    .block-wrap{
+        flex-wrap: wrap;
+    }
+
+    h3{
+        font-size: 39px;
+    }
+   
+    .btn-blog{
+        padding:5px;
+    }
+     
+    /* footer */
+
+    .footer{
+        flex-direction: column;
+        height: 150px;
+        padding: 20px 0;
+    }
+
+    .icon{
+        font-size: 30px;
+    }
+
+}
+
+
+
